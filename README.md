@@ -20,7 +20,7 @@ Customers can also tweet at any of our Pawpals by tweeting at our restaurant's t
 ## Paw Bytes Web Application
 The web application models the restaurant 'Paw Bytes'. 
 
-<img src="./screenshots/pawbytes_map.jpg" width="500" height="500">
+<img src="./screenshots/pawbytes_map.png" width="500" height="500">
 
 ## Project Status
 - This project is complete.
