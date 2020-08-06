@@ -1,0 +1,26 @@
+[
+    {
+        "tabID": 1,
+        "link":".",
+        "icon":"menu",
+        "tabName":"Menu"
+    },
+    {
+        "tabID": 2,
+        "link":".",
+        "icon":"orderout",
+        "tabName":"Order Out"
+    },
+    {
+        "tabID": 3,
+        "link":".",
+        "icon":"pawpals",
+        "tabName":"Paw Pals"
+    },
+    {
+        "tabID": 4,
+        "link":".",
+        "icon":"careers",
+        "tabName":"Careers"
+    }
+]

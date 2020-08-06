@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Lobster&family=Lobster+Two&family=Norican&family=Pacifico&display=swap");
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title
+{
+    font-family: "Norican","Lobster";
+}
+
+
+.main-container-bg
+{
+    background-color: #ECDFD5;
+}
+
+.clickable:hover
+{
+    cursor: pointer;
+}
+    .hover-rsgold:hover
+    {
+        background-color: #ffc125 !important;
+        
+    }
+    
+
+.imgContainer-circle
+{
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+    .imgContainer-circle > img
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }

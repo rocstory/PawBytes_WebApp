@@ -1,0 +1,119 @@
+[
+    {
+        "_id": "10",
+        "name":"Orange juice",
+        "category": "Drinks",
+        "price": 2.00,
+        "imgurl": "https://www.earthfoodandfire.com/wp-content/uploads/2018/04/Homemade-Orange-Juice-500x500.jpg"
+
+    },
+    {
+        "_id": "11",
+        "name":"Apple juice",
+        "category": "DRINKS",
+        "price": 1.40,
+        "imgurl": "https://upl.stack.com/wp-content/uploads/2018/09/11140845/Apple-Juice-STACK-654x368.jpg"
+    },
+    {
+        "_id": "12",
+        "name":"Just Water",
+        "category": "dRiNkS",
+        "price": 1.00,
+        "imgurl": "https://assets.tetrapak.com/static/publishingimages/sustainability/content-image/tetra-top-just-water.jpg"
+    },
+    {
+        "_id": "13",
+        "name":"Coffee",
+        "category": "DrinKs",
+        "price": 3.98,
+        "imgurl": "https://images.all-free-download.com/images/graphicthumb/cup_of_coffee_188317.jpg"
+    },
+
+
+    {
+        "_id": "20",
+        "name":"French Fries",
+        "category": "Sides",
+        "price": 2.15,
+        "imgurl": "https://images.all-free-download.com/images/graphicthumb/french_fries_in_paris_517260.jpg"
+    },
+    {
+        "_id": "21",
+        "name":"10x Chicken Nuggets",
+        "category": "SIDES",
+        "price": 1.40,
+        "imgurl": "https://images-gmi-pmc.edge-generalmills.com/fc466228-96ba-45c0-9814-b6cc26775289.jpg"
+    },
+    {
+        "_id": "22",
+        "name":"Salad",
+        "category": "SiDeS",
+        "price": 3.00,
+        "imgurl": "https://blog.fatfreevegan.com/wp-content/uploads/2012/03/spicy-apple-salad1.jpg"
+    },
+    {
+        "_id": "23",
+        "name":"Fried dough",
+        "category": "Sides",
+        "price": 3.98,
+        "imgurl": "https://thumbs.dreamstime.com/b/closeup-tasty-punchula-georgian-traditional-fried-dough-sprinkled-icing-sugar-closeup-tasty-punchula-georgian-171797052.jpg"
+    },
+
+    {
+        "_id": "30",
+        "name":"Rice and Chicken",
+        "category": "Main",
+        "price": 8.15,
+        "imgurl": "https://www.mommyhatescooking.com/wp-content/uploads/2019/01/Air-Fryer-chicken-Fried-Rice-8.jpg"
+    },
+    {
+        "_id": "31",
+        "name":"Penne Pasta",
+        "category": "Main",
+        "price": 7.40,
+        "imgurl": "https://image.freepik.com/free-photo/penne-pasta_1339-934.jpg"
+    },
+    {
+        "_id": "32",
+        "name":"Soup",
+        "category": "Main",
+        "price": 5.00,
+        "imgurl": "https://www.southernplate.com/wp-content/uploads/2009/01/free-soup-dieters-best-friend_FINAL08-scaled.jpg"
+    },
+    {
+        "_id": "33",
+        "name":"Pizza",
+        "category": "Main",
+        "price": 7.00,
+        "imgurl": "https://www.mamaknowsglutenfree.com/wp-content/uploads/2019/01/gluten-free-gingerbread-cookies-rc2-1.jpg"
+    },
+    {
+        "_id": "40",
+        "name":"Chocolate Cake",
+        "category": "Desserts",
+        "price": 8.15,
+        "imgurl": "https://www.mommyhatescooking.com/wp-content/uploads/2019/01/Air-Fryer-chicken-Fried-Rice-8.jpg"
+    },
+    {
+        "_id": "41",
+        "name":"Jello",
+        "category": "Desserts",
+        "price": 7.40,
+        "imgurl": "https://image.freepik.com/free-photo/penne-pasta_1339-934.jpg"
+    },
+    {
+        "_id": "42",
+        "name":"Smoothie",
+        "category": "Desserts",
+        "price": 5.00,
+        "imgurl": "https://www.southernplate.com/wp-content/uploads/2009/01/free-soup-dieters-best-friend_FINAL08-scaled.jpg"
+    },
+    {
+        "_id": "43",
+        "name":"Stuff",
+        "category": "Desserts",
+        "price": 7.00,
+        "imgurl": "https://www.mamaknowsglutenfree.com/wp-content/uploads/2019/01/gluten-free-gingerbread-cookies-rc2-1.jpg"
+    }
+
+]

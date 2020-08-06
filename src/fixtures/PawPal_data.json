@@ -1,0 +1,85 @@
+[
+    {
+        "_id": 0,
+        "name": "misty",
+        "tagname": "misty",
+        "species": "dog",
+        "colortheme": "#ebd4b7",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/misty.PNG"
+        ]
+    },
+    {
+        "_id": 1,
+        "name": "blue",
+        "tagname": "blue",
+        "species": "dog",
+        "colortheme": "#F6A8A6",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/blue1.JPG"
+        ]
+    },
+
+    {
+        "_id": 2,
+        "name": "carson",
+        "tagname": "barson",
+        "species": "dog",
+        "colortheme": "#C0ECCC",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/carson1.JPG"
+        ]
+    },
+
+    {
+        "_id": 3,
+        "name": "sammy",
+        "tagname": "sammy",
+        "species": "cat",
+        "colortheme": "#F4CDA6",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/sammy1.JPG"
+        ]
+    },
+    {
+        "_id": 4,
+        "name": "rocky",
+        "tagname": "rocky",
+        "species": "dog",
+        "colortheme": "#cae8dc",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/rocky1.jpg"
+        ]
+    },
+    {
+        "_id": 5,
+        "name": "buddy",
+        "tagname": "buddy",
+        "species": "dog",
+        "colortheme": "#D8BFD8",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/buddy1.jpg"
+        ]
+    },
+    {
+        "_id": 6,
+        "name": "Zoey",
+        "tagname": "Zoey",
+        "species": "dog",
+        "colortheme": "#FFC0CB",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/zoey1.JPG"
+        ]
+    }
+    ,
+    {
+        "_id": 7,
+        "name": "Daisy",
+        "tagname": "Daisy",
+        "species": "dog",
+        "colortheme": "#ffffba",
+        "album": [
+            "https://pawbytes.s3.amazonaws.com/daisy2.jpg"
+        ]
+    }
+]

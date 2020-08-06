@@ -1,0 +1,29 @@
+
+form > label
+{
+    font-size: 1.6em;
+}
+
+form > label > input
+{
+    width: 20em;
+}
+
+.button-ctrl
+{
+    display: flex;
+    justify-content: center;
+}
+
+.input-button
+{
+
+    width: 60%;
+    height: 5em;
+    background-color: #CEFFC9;
+
+}
+    .input-button:hover
+    {
+        background-color: #94FA92;
+    }

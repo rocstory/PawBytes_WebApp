@@ -1,0 +1,94 @@
+[
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/blue1.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/blue1.JPG"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/sammy1.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/sammy1.JPG"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/buddy1.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/buddy1.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/buddy2.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/buddy2.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/buddy3.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/buddy3.jpg"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/carson1.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/carson1.JPG"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/carson2.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/carson2.JPG"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/daisy1.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/daisy1.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/daisy2.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/daisy2.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/daisy3.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/daisy3.jpg"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/rocky1.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/rocky1.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/rocky2.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/rocky2.jpg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/rocky3.jpg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/rocky3.jpg"
+    },
+
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/sammy_blue1.jpeg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/sammy_blue1.jpeg"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/sammyblue2.jpeg",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/sammyblue2.jpeg"
+    },
+    
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/zoey1.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/zoey1.JPG"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/zoey2.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/zoey2.JPG"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/zoey3.PNG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/zoey3.PNG"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/misty.PNG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/misty.PNG"
+    },
+    
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/misty2.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/misty2.JPG"
+    },
+    {
+        "original": "https://pawbytes.s3.amazonaws.com/misty3.JPG",
+        "thumbnail": "https://pawbytes.s3.amazonaws.com/misty3.JPG"
+    }
+]

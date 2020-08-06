@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 0,
+        "text": "This is just filler text. I can write whatever I want in this text box and not have to worry. a b c 1 2 3 43212 0 this is just ... stuff...",
+        "sender": "mat",
+        "palsmentioned": [0, 1, 2, 3, 4],
+        "tweet_id": null,
+        "datereceived": "4/12/2020"
+    },
+    {
+        "_id": 1,
+        "text": "This is just filler text. I can write whatever I want in this text box and not have to worry. a b c 1 2 3 43212 0 this is just ... stuff...",
+        "sender": "elly",
+        "palsmentioned": [1, 2],
+        "tweet_id": null,
+        "datereceived": "4/12/2020"
+    },
+    {
+        "_id": 2,
+        "text": "This is just filler text. I can write whatever I want in this text box and not have to worry. a b c 1 2 3 43212 0 this is just ... stuff...",
+        "sender": "anusha",
+        "palsmentioned": [3, 4],
+        "tweet_id": null,
+        "datereceived": "4/12/2020"
+    }
+]

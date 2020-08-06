@@ -1,0 +1,25 @@
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #363537;
+    color: white;
+    margin-bottom: 1.2em;
+    
+}
+    
+    #nav-links
+    {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+        #nav-links li:hover
+        {
+            cursor: pointer;
+            color: gold;
+        }

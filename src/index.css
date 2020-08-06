@@ -1,0 +1,12 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body
+{
+    background-color: #E8EBE4;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
