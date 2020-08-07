@@ -61,7 +61,7 @@ class Home extends React.Component
                             <Introduction/>
                         </div>
     
-                        <ImageGallery items={this.state.album} showFullscreenButton={false} autoPlay={true} />
+                        <ImageGallery style={props} items={this.state.album} showFullscreenButton={false} autoPlay={true} />
     
                     </div>
                 )}

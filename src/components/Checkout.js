@@ -26,8 +26,6 @@ class Checkout extends React.Component
 
     render()
     {
-
-        
         return (
             <Spring
                 from={{opacity: 0, marginTop: -500}}
@@ -77,6 +75,14 @@ class ContactForm extends React.Component
 
     confirmCustomer =  async (event) => {
         event.preventDefault();
+        let re = /[a-zA-Z0-9]+/
+        let validName = RegExp(re);
+
+
+        if (!validName.test(this.state.firstname))
+        {
+            return;
+        }
 
         if (!this.props.customerid) // if the customer does not exist 
         {
@@ -131,10 +137,10 @@ class ContactForm extends React.Component
                     <hr/>
                     <form>
                         <label htmlFor="firstname">First Name</label> <br/>
-                        <input name="firstname"></input>
+                        <input name="firstname" onChange={this.handleChange}></input>
                         <br/>
                         <label htmlFor="lastname">Last Name</label> <br/>
-                        <input name="lastname"></input>
+                        <input name="lastname" onChange={this.handleChange}></input>
                         <br/>
                         <p>Other fields are ommitted to avoid users from inputting sensitive information</p>
                     </form>
