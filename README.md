@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/928cb6e1-371d-488c-ae9f-10c15d63fd57/deploy-status)](https://app.netlify.com/sites/pawb/deploys)
+
 # Paw Bytes
 Paw Bytes is a three part personal project which models a fictional restaurant.
 
