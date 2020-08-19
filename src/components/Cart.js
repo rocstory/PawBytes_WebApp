@@ -1,8 +1,6 @@
 import React from "react";
 import icon from '../assets/images/icons/checkoutBag.png';
 import {CartContext} from "../CartContext";
-//import {useTransition, animated} from 'react-spring';
-
 
 function Cart(props)
 {

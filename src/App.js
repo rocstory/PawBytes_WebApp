@@ -7,10 +7,10 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Credit from "./components/Credit";
 
 import Nav from "./components/Nav";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import Menu from "./components/Menu";
 import Order from "./components/Order";
-import Checkout from "./components/Checkout";
+import Checkout from "./components/Checkout/Checkout";
 import PawPals from "./components/PawPals";
 
 import {get_credits_from_db} from './pawbytesDB';

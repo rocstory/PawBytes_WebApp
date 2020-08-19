@@ -1,8 +1,8 @@
 import React from 'react';
-import Introduction from "./Introduction";
+import Introduction from "./Introduction/Introduction";
 import {Spring} from 'react-spring/renderprops';
 import ImageGallery from 'react-image-gallery';
-import {get_album_from_db} from '../pawbytesDB';
+import {get_album_from_db} from '../../pawbytesDB';
 
 
 class Home extends React.Component
