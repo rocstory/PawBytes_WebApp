@@ -1,0 +1,51 @@
+.edisplay-container
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+}
+.eheader
+{
+    border-bottom: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.eheader-details
+{
+    font-size: 1em;
+    text-decoration: capitalize; 
+    margin-left: 1em;
+}
+
+.ebody
+{
+    height: 33.3em;
+    overflow-y: auto;
+}
+
+
+/*
+
+const body =
+{
+    height: "33.3em",
+    overflowY: "auto",
+}
+
+const imgContainer =
+{
+    border: "2px solid black",
+    width: "7em",
+    height:"7em",
+}
+
+const buttonStyle =
+{
+    width: "4.5em",
+    height: "2em",
+    float: "right",
+}
+*/

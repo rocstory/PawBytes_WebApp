@@ -2,8 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Spring} from 'react-spring/renderprops';
 import {animated} from 'react-spring';
-import {get_pawpals_from_db, get_etreats_from_db} from '../pawbytesDB';
+import {get_pawpals_from_db, get_etreats_from_db} from '../../pawbytesDB';
 
+import "./PawPals.css";
+
+import PawPal from './PawPal/PawPal';
 
 
 class PawPals extends React.Component
@@ -17,7 +20,6 @@ class PawPals extends React.Component
             selectedPawPal: null,
             pawpals: [],
         }
-
     }
 
     getSelectedPawPal = (pawpal) =>
@@ -56,48 +58,6 @@ class PawPals extends React.Component
             }
         );   
 
-        const container =
-        {
-           display: "grid",
-           gridTemplateColumns: "minmax(300px, 30%) 1fr",
-        }
-        
-        const pawContainer = 
-        {
-            border: "2px solid black",
-            background: "white",
-            overflowY: "auto",
-            height: "40em",
-            padding: "0.5em",
-            display: "grid",
-            gridTemplateRows: "auto 1fr auto",
-        }
-        const paw_list =
-        {
-            border: "1px solid black",
-            width: "100%",
-            overflowY: "auto",
-            istStyle: "none",
-            padding: "0",
-            margin: "0"
-        }
-        
-        const formContainer =
-        {
-            marginBottom: "1em",
-        }
-
-        const inputLabel =
-        {
-            marginRight: "0.5em"
-        }
-
-        const searchInput =
-        {
-            width: "10em",
-            fontSize: "1.2em"
-        }
-
         return(
 
             <Spring
@@ -105,14 +65,14 @@ class PawPals extends React.Component
                 to={{opacity: 1, marginTop: 0}}
             >
                 {props => (
-                    <div style={Object.assign( {}, container, props)}>
+                    <div className="pawpal-container" style={Object.assign( {},props)}>
                                         
-                    <div style={pawContainer} >
-                        <form style={formContainer}>
-                            <label style={inputLabel} htmlFor="pawname">
+                    <div className="paw-container">
+                        <form className="paw-form-container">
+                            <label className="paw-input-label" htmlFor="pawname">
                                 <FontAwesomeIcon icon={['fas', 'search']}/>
                             </label>
-                            <input style={searchInput} 
+                            <input  className="paw-search-input" 
                                     id="pawname"
                                     name="pawname" 
                                     placeholder="Search Paw Pals"
@@ -120,7 +80,7 @@ class PawPals extends React.Component
                                     onChange={this.updateSearch} />
                         </form>
                         
-                        <ul style={paw_list}>
+                        <ul className="paw-list">
                             {
                                 pawpal_data.map((pawpal) => {
                                     return <PawPal key={pawpal._id} pawpal={pawpal}
@@ -138,50 +98,6 @@ class PawPals extends React.Component
     }
 };
 
-function PawPal(props)
-{
-    const container =
-    {
-        borderBottom: "1px solid black",
-        backgroundColor: props.pawpal.colortheme,
-        height: "6em",
-        padding: "0.5em",
-        display: "flex"
-    }
-
-    const imgContainer =
-    {
-        width: "5em",
-        height:"5em",
-        float: "left"
-    }
-
-    const nameStyle =
-    {
-        float: "left",
-    }
-
-    const details =
-    {
-        marginLeft: "1.2em",
-        textTransform: "capitalize"
-    }
-
-    return (
-        <div style={container} 
-            className="clickable hover-rsgold"
-            onClick={()=> props.data.updateSelectedPawPal(props.pawpal)} >
-            <div style={imgContainer} className="imgContainer-circle">
-                <img src={props.pawpal.album[0]} alt="pawpal icon"/>
-            </div>
-            <div style={details}>
-                <p style={nameStyle}>Name: {props.pawpal.name}</p> <br/>
-                <p style={nameStyle}>Tagname: {props.pawpal.tagname}</p>
-            </div>
-            
-        </div>
-    )
-}
 
 class ETreatDisplay extends React.Component
 {

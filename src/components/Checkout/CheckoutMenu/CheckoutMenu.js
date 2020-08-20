@@ -4,6 +4,8 @@ import {formatToCurrency } from  "../../../utilities";
 import {add_order_into_db} from "../../../pawbytesDB";
 import "./CheckoutMenu.css";
 
+import CheckoutItem from "./CheckoutItem/CheckoutItem";
+
 class CheckoutMenu extends React.Component
 {
     static contextType = CartContext;
@@ -70,88 +72,5 @@ class CheckoutMenu extends React.Component
         )
     }
 };
-
-function CheckoutItem(props) 
-{
-    const containerStyle =
-    {
-        borderBottom: "1px dotted black",
-        backgroundColor: "#F3F4F6",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-evenly",
-        padding: "0 .5em",
-        height: "5em",
-        
-    }
-    const itemDescriptionContainer =
-    {
-        display: "flex",
-        flexDirection: "column",
-        padding: "0 .5em",
-        height: "4.8em",
-        width: "80%"
-    }
-    const prodName =
-    {
-        fontSize: "1.2em",
-        fontWeight: "bold",
-        margin: "0 0"
-    }
-
-    const itemDetailContainer =
-    {
-        fontSize: "1.0em",
-        margin: "0px",
-        padding: "0px"
-    }
-
-    const textStyle =  {margin: "0"}
-    const lineTotal = formatToCurrency(props.item.linetotal);
-    const buttonStyle = 
-    {
-        width: "4.7em", 
-        height: "2em", 
-        alignSelf:"flex-end", 
-        marginTop: "0.9em",
-        
-    }
-    const imgContainer =
-    {
-        width: "4em",
-        height: "4em",
-        border: "2px solid black"
-    }
-
-    return (
-        <div style={containerStyle}>
-            <div style={imgContainer}  className="imgContainer-circle">
-                <img  src={props.item.imgurl} alt="item icon"/>
-            </div>
-
-            <div style={itemDescriptionContainer}>
-                <p style={prodName}>{props.item.name}</p>
-
-                <div style={itemDetailContainer}>
-                    <p style={Object.assign({},{float: "left" }, textStyle )} >Quantity: {props.item.quantity}</p>
-                    <p style={Object.assign({},{float: "right" }, textStyle )} >{lineTotal}</p>
-                </div>
-
-                <CartContext.Consumer>
-                    {context => (
-                            <button 
-                                style={Object.assign({}, buttonStyle,)}
-                                onClick={() => {  context.removeFromCart(props.item);}}>
-                                Remove
-                            </button>
-                    )}
-                    
-                </CartContext.Consumer>
-                
-            </div>
-        </div>
-    );
-};
-
 
 export default CheckoutMenu

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from "./Cart";
+import Cart from "./Cart/Cart";
 import "./Nav.css";
 import {Link} from 'react-router-dom';
 
