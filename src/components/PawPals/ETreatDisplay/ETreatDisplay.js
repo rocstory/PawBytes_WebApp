@@ -1,11 +1,10 @@
 
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {Spring} from 'react-spring/renderprops';
 import {animated} from 'react-spring';
-import {get_pawpals_from_db, get_etreats_from_db} from '../../pawbytesDB';
+import {get_etreats_from_db} from '../../../pawbytesDB';
 
 import "./ETreatDisplay.css";
+import ETreat from "./ETreat/ETreat";
 
 class ETreatDisplay extends React.Component
 {
@@ -29,52 +28,7 @@ class ETreatDisplay extends React.Component
     
     render()
     {
-        const container =
-        {
-            display: "grid",
-            gridTemplateRows: "auto 1fr auto",
-            overflow: "hidden"
-        }
-
-        const header =
-        {
-            borderBottom: "2px solid black",
-            backgroundColor: "white",
-            display: "flex", 
-            flexDirection: "row",
-            justifyContent: "center",
-        }
-        const headerDetails =
-        {
-
-            fontSize: "1em",
-            textDecoration: "capitalize",
-            marginLeft: "1em",
-        }
-
-        const body =
-        {
-            height: "33.3em",
-            overflowY: "auto",
-
-        }
-
-        const imgContainer =
-        {
-            border: "2px solid black",
-            width: "7em",
-            height:"7em",
-        }
-        
-        const buttonStyle =
-        {
-            width: "4.5em",
-            height: "2em",
-            float: "right",
-        }
-
         let treats_data = this.state.etreats;
-
         let name = null;
         let tagName = null;
         let imgTag = null;
@@ -91,33 +45,33 @@ class ETreatDisplay extends React.Component
                 }
             );
 
-            clearButton = <button style={buttonStyle}
-                                onClick={() => {this.props.clearSelectedPawPal()}} className="clickable hover-rsgold">Clear</button>
+            clearButton = <button onClick={() => {this.props.clearSelectedPawPal()}} 
+                            className="clickable hover-rsgold e-button-style">Clear</button>
         }
 
         return (
-            <div style={container}>
+            <div className="edisplay-container">
                 <animated.div>
-                    <div style={Object.assign( {})} > 
+                    <div> 
                         {
                             this.props.pawpal 
-                                ? <div style={header}>
-                                    <div style={Object.assign( {}, imgContainer)} className="imgContainer-circle">
+                                ? <div className="eheader">
+                                    <div className="e-img-container imgContainer-circle">
                                         {imgTag}
                                     </div>
-                                    <div style={Object.assign( {}, headerDetails)} >
+                                    <div className="eheader-details" >
                                         <h3>Paw Pal: {name}</h3>
                                         <p>Tagname:  {tagName}</p>
                                             {clearButton}
                                     </div>
                                 </div>
-                                : <div style={header}><p> Hello! Please select a Paw Pal to see their E-Treat!</p> </div>
+                                : <div className="eheader"><p> Hello! Please select a Paw Pal to see their E-Treat!</p> </div>
                         }
                     </div>
                 </animated.div>
                 
 
-                <div style={body}>
+                <div className="ebody">
                     {
                         treats_data.map((treat) => {
                             return <ETreat key={treat._id} treat={treat}/>
@@ -131,3 +85,5 @@ class ETreatDisplay extends React.Component
 
 
 }
+
+export default ETreatDisplay

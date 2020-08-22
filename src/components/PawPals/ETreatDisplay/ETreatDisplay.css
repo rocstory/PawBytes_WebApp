@@ -26,26 +26,16 @@
     overflow-y: auto;
 }
 
-
-/*
-
-const body =
+.e-img-container
 {
-    height: "33.3em",
-    overflowY: "auto",
+    border: 2px solid black;
+    width: 7em;
+    height: 7em;
 }
 
-const imgContainer =
+.e-button-style
 {
-    border: "2px solid black",
-    width: "7em",
-    height:"7em",
+    width: 4.5em;
+    height: 2em;
+    float: right;
 }
-
-const buttonStyle =
-{
-    width: "4.5em",
-    height: "2em",
-    float: "right",
-}
-*/

@@ -6,10 +6,10 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Credit from "./components/Credit/Credit";
 
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import Home from "./components/Home/Home";
-import Menu from "./components/Menu";
-import Order from "./components/Order";
+import Menu from "./components/Menu/Menu";
+import Order from "./components/Order/Order";
 import Checkout from "./components/Checkout/Checkout";
 import PawPals from "./components/PawPals/PawPals";
 

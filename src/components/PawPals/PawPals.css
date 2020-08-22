@@ -1,7 +1,8 @@
-.pawpal-container
+.pawpal-menu
 {
     display: grid;
     grid-template-columns: minmax(300px, 30%) 1fr;
+
 }
 
 .paw-container
@@ -13,6 +14,7 @@
     padding: 0.5em;
     display: grid;
     grid-template: auto 1fr auto;
+
 }
 
 .paw-list
