@@ -1,0 +1,61 @@
+.is-container
+{
+    border: 2px solid black;
+    flex: 0 1 400px;
+    width: 30em;
+}
+
+.is-selected-item
+{
+    text-align: center;
+}
+
+.is-details
+{
+    padding-left: 1.2em;
+}
+
+.is-button
+{
+    color: black;
+    border: 2px solid black;
+    width: 8em;
+    height: 4em;
+    border-radius: 5%;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 1em;
+}
+
+.is-checkout-button
+{
+    background-color: yellow;
+}
+
+.add-to-cart-button
+{
+    background-color: #D6FFB7;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.is-label
+{
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.is-input
+{
+    font-size: 1.2em;
+}
+
+.is-img-container
+{
+    width: 8em;
+    background-color: #F9F4F1;
+    height: 8em;
+    border: 2px dotted black;
+    margin: auto;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import {ProductContext} from "../ProductContext";
-import {formatToCurrency, fetchProductsFromDB } from  "../utilities";
+import {ProductContext} from "../../ProductContext";
+import {formatToCurrency, fetchProductsFromDB } from  "../../utilities";
 import {Spring} from 'react-spring/renderprops';
 
 

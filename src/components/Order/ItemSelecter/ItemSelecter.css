@@ -1,0 +1,44 @@
+.sel-container
+{
+    border: 2px solid black;
+    flex: 0 1 1 150px;
+}
+
+.sel-navbar
+{
+    width: 32em;
+    list-style: none;
+    padding: 0;
+    margin-left: 1px;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.category-item-container
+{
+    height: 21.5em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-top: 2px dotted black;
+}
+
+/* Render Item Display */
+
+.sel-item-list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Render Prompt */
+.sel-prompt-container
+{
+    background-color: white;
+    height: 99%;
+    place-items: center;
+    text-align: center;
+}

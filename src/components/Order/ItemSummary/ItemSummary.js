@@ -1,7 +1,9 @@
 import React from "react";
-import {CartContext} from "../CartContext";
-import {formatToCurrency } from  "../utilities";
+import {CartContext} from "../../../CartContext";
+import {formatToCurrency } from  "../../../utilities";
 import {Link} from 'react-router-dom';
+
+import './ItemSummary.css';
 
 class ItemSummary extends React.Component
 {
@@ -50,13 +52,6 @@ class ItemSummary extends React.Component
             quantity: this.state.quantity,
             linetotal: this.state.lineTotal
 
-            /*
-            pid: product.pid,
-            name: product.name,
-            quantity: this.state.quantity,
-            lineTotal: this.state.lineTotal,
-            imgurl: product.imgurl 
-            */
         }
         document.getElementById('quantity').value = '';
         this.setState((prevState) => ({lineTotal: 0, quantity: 0 }));
@@ -94,67 +89,10 @@ class ItemSummary extends React.Component
 
     render()
     {
-
-        const container = {
-            border: "2px solid black",
-            flex: "0 1 400px",
-            width: "30em"
-        };
-
-        const selectedItem = {
-            textAlign: "center",
-        };
-
-        const details = 
-        {
-            paddingLeft: "1.2em"
-        }
-        const buttonStyle = 
-        {
-            color: "black",
-            border: "2px solid black",
-            width: "8em",
-            height: "4em",
-            borderRadius: "5%",
-            fontWeight: "bold",
-            float: "right",
-            marginBottom:"1em"
-        };
-
-        const checkoutButton =
-        {
-            backgroundcolor: "yellow",
-        }
-
-        const addToCartButton =
-        {
-            backgroundColor: "#D6FFB7",
-            marginLeft: "1em",
-            marginRight: "1em"
-        }
-        const labelStyle =
-        {
-            marginRight: "10px",
-            fontSize: "1.2em",
-            fontWeight: "bold"
-        }
-
-        const inputStyle =
-        {
-            fontSize: "1.2em",
-        }
-        const imgContainer =
-        {
-            width:"8em",
-            backgroundColor: "#F9F4F1",
-            height: "8em",
-            border:"2px dotted black",
-            margin: "auto"
-        };
-        
+                
         let productName = null;
         let productLineTotal = null;
-        let productImage = <div style={imgContainer} className="imgContainer-circle"> </div>; 
+        let productImage = <div className="is-img-container imgContainer-circle"> </div>; 
         let unitPrice = null;
 
         if (this.props.selectedItem)
@@ -162,23 +100,23 @@ class ItemSummary extends React.Component
             productName = this.props.selectedItem.name;
             unitPrice = (this.props.selectedItem.price == null) ? formatToCurrency(0) : formatToCurrency(this.props.selectedItem.price)
             productLineTotal = formatToCurrency(this.state.lineTotal);
-            productImage = <div style={imgContainer} className="imgContainer-circle"> <img src={this.props.selectedItem.imgurl} alt="selected product icon" /> </div>;
+            productImage = <div className="is-img-container imgContainer-circle"> <img src={this.props.selectedItem.imgurl} alt="selected product icon" /> </div>;
         }
 
         
 
         return(
-            <div style={container} className="main-container-bg">
+            <div className="main-container-bg is-container">
                 <div>
-                    <h1 style={selectedItem}>Selected Product</h1>
+                    <h1 className="is-selected-item">Selected Product</h1>
                     <div>
                         {productImage}
-                        <div style={details}>
+                        <div className="is-details">
                             <h3>Product Name: {productName}</h3>
                             <h3>Unit Price: {unitPrice}</h3>
-                            <label style={labelStyle} htmlFor="quantity">Quantity</label>
+                            <label className="is-label" htmlFor="quantity">Quantity</label>
 
-                            <input style={inputStyle} 
+                            <input className="is-input" 
                                     id="quantity" placeholder="Enter quantity here" 
                                     onChange={this.updateItemQuantity}
                             ></input>
@@ -190,8 +128,7 @@ class ItemSummary extends React.Component
                     <CartContext.Consumer>
                         { context => (
                             <button 
-                                style={Object.assign( {}, buttonStyle, addToCartButton)} 
-                                className="clickable "
+                                className="is-button add-to-cart-button clickable" 
                                 onClick={() => { 
                                                     let product = this.generateProductInvoice();
                                                     if (product)
@@ -205,7 +142,7 @@ class ItemSummary extends React.Component
                         )}
                     </CartContext.Consumer>
                     <Link to="/checkout"> 
-                        <button style={Object.assign( {}, buttonStyle, checkoutButton)} className="clickable">
+                        <button className="is-button clickable">
                             Proceed to Checkout
                         </button> 
                     </Link>
