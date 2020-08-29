@@ -1,0 +1,51 @@
+.intro-container
+{
+    border: 1px solid black;
+    background-color: #363537;
+    width: 40em;
+    height: 20em;
+    overflow: hidden;
+}
+
+.intro-text-container
+{
+    height: 11.8em;
+    background-color: #F0F8FF;
+    padding: 1.2em;
+}
+
+.intro-text-container > p
+{
+    font-family: times;
+}
+
+.intro-text-container > h3
+{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.intro-img-container
+{
+    width: 7em;
+    height: 7em;
+    margin: auto;
+}
+
+
+/*
+
+
+    const paragraphStyle =
+    {
+        fontFamily: "times",
+    }
+
+    const imgContainer =
+    {
+        width: "7em",
+        height: "7em",
+        margin: "auto"
+    }
+    */

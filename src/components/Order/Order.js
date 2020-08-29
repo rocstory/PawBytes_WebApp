@@ -1,7 +1,8 @@
 import React from "react";
-import ItemSelecter from "./ItemSelecter";
-import ItemSummary from "./ItemSummary";
+import ItemSelecter from "./ItemSelecter/ItemSelecter";
+import ItemSummary from "./ItemSummary/ItemSummary";
 import {Spring} from 'react-spring/renderprops';
+import "./Order.css";
 
 
 class Order extends React.Component
@@ -24,13 +25,6 @@ class Order extends React.Component
   };
 
   render() {
-
-    const container =
-    {
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "center",
-    }
     
     return (
       <Spring
@@ -38,14 +32,12 @@ class Order extends React.Component
         to={{opacity: 1, marginTop: 0}}
       >
         {props => (
-          <div style={Object.assign( {}, container, props)} >
+          <div style={Object.assign( {}, props)} className="order-container" >
             <ItemSelecter
             data={ {selectedItem: this.state.selectedItem, 
                     updateSelectedItem: this.getSelectedItem }}
           />
-
             <ItemSummary  selectedItem={this.state.selectedItem}/>
-
           </div>
         )}
           

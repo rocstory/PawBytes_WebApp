@@ -1,0 +1,52 @@
+.checkout-menu-container
+{
+    border: 2px solid black;
+    width: 70%;
+    height: 36em;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 0.6em;
+    overflow: hidden;
+}
+
+.cart-display
+{
+    border: 2px solid black;
+    background-color: whitesmoke;
+    height: 21em;
+    width: 90%;
+    overflow-y: auto;
+    margin: 1em auto;
+}
+
+.item-list
+{
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.details
+{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.6em;
+}
+
+.button-style
+{
+    border: 2px solid black;
+    width: 12em;
+    height: 5em;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+
+
+/*
+
+*/

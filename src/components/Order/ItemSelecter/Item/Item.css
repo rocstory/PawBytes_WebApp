@@ -1,0 +1,39 @@
+.item-container
+{
+    border-bottom: 1px dotted black;
+    background: white;
+    width: 100%;
+    height: 5em;
+    overflow-y: auto;
+    padding: 0.5em;
+    display: flex;
+}
+
+.item-details
+{
+    margin-left: 1em;
+    width: 70%;
+}
+    .item-details  > h3
+    {
+        display: inline-block;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+.item-img-container
+{
+    border: 2px solid black;
+    width: 4em;
+    height: 4em;
+}
+
+.item-name
+{
+    float: left;
+}
+
+.item-price
+{
+    float: right;
+}

@@ -1,0 +1,24 @@
+.category-container
+{
+    border: 2px solid black;
+    background-color: whitesmoke;
+    flex: 0 1 600px;
+    margin: 5px;
+}
+
+.category-title
+{
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 2px dashed black;
+}
+
+.cat-product-container
+{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

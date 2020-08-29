@@ -1,0 +1,31 @@
+.cart-container
+{
+    text-align: center;
+    width: 11em;
+    height: auto;
+    overflow: hidden;
+}
+
+.cart-img-style
+{
+    width: 5em;
+    height: 5em;
+}
+
+.cart-amount-container
+{
+    border: 2px solid black;
+    border-radius: 30%;
+    width: 5em;
+    height: 2em;
+    background-color: white;
+    float: right;
+    margin-top: 3em;
+}
+
+.cart-amount-container > .amount-style
+{
+    margin: auto;
+    font-size: 1.7em;
+    color: black;
+}

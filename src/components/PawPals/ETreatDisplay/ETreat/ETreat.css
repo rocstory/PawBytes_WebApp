@@ -1,0 +1,13 @@
+.etreat-container
+{
+    border-bottom: 1px dotted black;
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0em 2em; 
+}
+
+.treat-header
+{
+    display: inline-block;
+}

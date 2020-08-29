@@ -1,0 +1,44 @@
+.pawpal-menu
+{
+    display: grid;
+    grid-template-columns: minmax(300px, 30%) 1fr;
+
+}
+
+.paw-container
+{
+    border: 2px solid black;
+    background: white;
+    overflow-y: auto;
+    height: 40em;
+    padding: 0.5em;
+    display: grid;
+    grid-template: auto 1fr auto;
+
+}
+
+.paw-list
+{
+    border: 1px solid black;
+    width: 100%;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paw-form-container
+{
+    margin-bottom: 1em;
+}
+
+.paw-input-label
+{
+    margin-right: 0.5em;
+}
+
+.paw-search-input
+{
+    width: 10em;
+    font-size: 1.2em;
+}

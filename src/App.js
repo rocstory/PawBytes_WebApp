@@ -4,14 +4,14 @@ import './App.css';
 import CartProvider from './CartContext';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Credit from "./components/Credit";
+import Credit from "./components/Credit/Credit";
 
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import Menu from "./components/Menu";
-import Order from "./components/Order";
-import Checkout from "./components/Checkout";
-import PawPals from "./components/PawPals";
+import Nav from "./components/Nav/Nav";
+import Home from "./components/Home/Home";
+import Menu from "./components/Menu/Menu";
+import Order from "./components/Order/Order";
+import Checkout from "./components/Checkout/Checkout";
+import PawPals from "./components/PawPals/PawPals";
 
 import {get_credits_from_db} from './pawbytesDB';
 

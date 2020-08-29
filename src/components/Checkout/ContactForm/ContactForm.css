@@ -1,0 +1,24 @@
+.contact-form-container
+{
+    border: 2px solid black;
+    border-radius: 1%;
+    background-color: white;
+    width: 48%;
+    height: 23em;
+    margin: auto;
+    padding: 0.6em;
+    overflow: hidden;
+}
+
+.input-button
+{
+
+    width: 60%;
+    height: 5em;
+    background-color: #CEFFC9;
+
+}
+    .input-button:hover
+    {
+        background-color: #94FA92;
+    }

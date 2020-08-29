@@ -15,7 +15,6 @@ Initially the project was intended to be a way of learning how to create a datab
 The goal of this project is to learn about managing a database, developing a web application using the React library, and working with Twitter's API and Python.
 
 ## Introduction 
-
 Paw Bytes is a popular restaurant, home to many software engineers! Customers from all over come to enjoy many delicious entries as well as the company of our wonderful Paw Pals and Paw Associates.
 
 Customers can also tweet at any of our Pawpals by tweeting at our restaurant's twitter profile with the hashtag of PawPals!
@@ -25,8 +24,13 @@ The web application models the restaurant 'Paw Bytes'.
 
 <img src="./screenshots/pawbytes_map.png" width="500" height="500">
 
-## Project Status
-- This project is complete.
+## Project Documentation
+Below are diagrams showing the structure of the web application.
+
+[Click here for this Web Application's Documentation](./documentation)
+
+<img src="./screenshots/componentDiagram1.jpg" width="700" height="500">
+<img src="./screenshots/componentDiagram2.jpg" width="700" height="500">
 
 ## Future implementation
 - Integrate component animations
@@ -34,8 +38,6 @@ The web application models the restaurant 'Paw Bytes'.
 
 ## Current Bug(s)
 - When hosted on Netlify, the photo gallery and credits on the home page does not load on user's first visit.
-
-## Reflection
 
 ## Challenges
 - Learning react within the time frame and creating the application was a challenge within itself
