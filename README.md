@@ -24,10 +24,10 @@ The web application models the restaurant 'Paw Bytes'.
 ## Project Documentation
 Below are diagrams showing the structure of the web application.
 
-Click here for all of Paw Bytes' documentation [Documentation](./documentation)
+[Click here for this Web Application's Documentation](./documentation)
 
-<img src="./screenshots/componentDiagram1.jpg" width="500" height="500">
-<img src="./screenshots/componentDiagram2.jpg" width="500" height="500">
+<img src="./screenshots/componentDiagram1.jpg" width="700" height="500">
+<img src="./screenshots/componentDiagram2.jpg" width="700" height="500">
 
 ## Future implementation
 - Integrate component animations
