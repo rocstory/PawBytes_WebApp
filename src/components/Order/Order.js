@@ -25,13 +25,6 @@ class Order extends React.Component
   };
 
   render() {
-
-    const container =
-    {
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "center",
-    }
     
     return (
       <Spring
@@ -44,9 +37,7 @@ class Order extends React.Component
             data={ {selectedItem: this.state.selectedItem, 
                     updateSelectedItem: this.getSelectedItem }}
           />
-
             <ItemSummary  selectedItem={this.state.selectedItem}/>
-
           </div>
         )}
           

@@ -1,8 +1,8 @@
 import React from 'react';
 import {ProductContext} from "../../ProductContext";
-import {formatToCurrency, fetchProductsFromDB } from  "../../utilities";
+import {fetchProductsFromDB } from  "../../utilities";
 import {Spring} from 'react-spring/renderprops';
-
+import Category from './Category/Category';
 
 class Menu extends React.Component
 {
@@ -71,108 +71,3 @@ class Menu extends React.Component
 };
 
 export default Menu;
-
-
-function Category(props)
-{
-    const container = {
-        border: "2px solid black",
-        backgroundColor: "whitesmoke",
-        flex: "0 1 600px",
-        margin: "5px"
-        //width: "40em",
-        //marginBottom: "1.2em"
-    }
-
-
-
-    const title = 
-    {
-        textAlign: "center",
-        textDecoration: "none",
-        textTransform: "capitalize",
-        borderBottom: "2px dashed black"
-    }
-
-    const productContainer =
-    {
-        border: "0px solid red", 
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-around"
-    }
-    
-
-    const items = props.products.map(product => {
-        return ( <MenuItem key={product._id} product={product}/> )
-    })
-
-    return (
-        <div style={container}>
-            <h1 style={title}>{props.name}</h1>
-            <div style={productContainer}>
-                {items}
-            </div>
-        </div>
-    )
-}; 
-
-function MenuItem(props)
-{
-    const container =
-    {
-        border: "0px solid black",
-        background: "white",
-        width: "100%",
-        height: "5em",
-        overflow: "hidden",
-        padding: "0.5em",
-        display: "flex"
-    }
-    
-    const details =
-    {
-        marginLeft: "1em",
-        width: "80%"
-    }
-
-    const imgContainer =
-    {
-        border: "2px solid black",
-        width: "4em",
-        height: "4em",
-    }
-
-    const label =
-    {
-        display: "inline-block",
-        textAlign: "center",
-        textTransform: "capitalize"
-    }
-
-    const name =
-    {
-        float: "left",
-    }
-
-    const price =
-    {
-        float: "right",
-    }
-
-    return (
-        <div style={container} >
-
-            <div style={imgContainer} className="imgContainer-circle">
-                <img src={props.product.imgurl} alt="product icon"/>
-            </div>
-
-            <div style={details}>
-                <h3 style={Object.assign({}, label, name )} >{ props.product.name}  </h3>
-                <h3 style={Object.assign({},label, price ) } >{formatToCurrency(props.product.price)} </h3>
-            </div>
-            
-        </div>
-    )
-}

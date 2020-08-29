@@ -42,15 +42,10 @@ class ProductProvider extends React.Component
 
     async fetchData ()
     {
-        console.log("Fetching data");
         if (this.state.categories.isEmpty())
         {
             let products =  await this.fetchProductsFromDatabase();
             this.initializeCategories(products);
-        }
-        else
-        {
-            console.log("Already update.", this.state.categories);
         }
     }
 

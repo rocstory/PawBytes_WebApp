@@ -1,3 +1,7 @@
+/**
+ * This file contains functions that are used across multiple components.
+ */
+
 import {get_products_from_db} from './pawbytesDB';
 
 export async function fetchProductsFromDB()

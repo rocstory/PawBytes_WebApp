@@ -41,7 +41,7 @@ export async function get_pawpals_from_db()
         });
     }
     catch {
-        console.log("Unable to retrieve data")
+        //
     }
     finally {
         return pawpals;
@@ -56,7 +56,7 @@ export async function get_products_from_db()
         products = await db.collection("products").find().toArray();
     }
     catch {
-        console.log("Unable to retrieve data")
+        // 
     }
     finally {
         return products;
@@ -86,7 +86,7 @@ export async function get_album_from_db()
         album =   await db.collection("album").find().toArray();
     }
     catch {
-        console.log("Unable to retrieve data")
+        // 
     }
     finally {
         return album;
@@ -101,7 +101,7 @@ export async function get_customer_from_db(customerid)
         customer =   await db.collection("customers").findOne({"_id": ObjectID(customerid)});
     }
     catch {
-        console.log("Unable to retrieve customer", customerid)
+        // 
     }
     finally {
         return customer;
@@ -116,7 +116,7 @@ export async function set_customer_into_db(customer)
         .then((result)=> {customerid = result.insertedId.toString()});
     }
     catch {
-        console.log("Unable to add customer", customer);
+        // 
     }
     finally
     {
@@ -130,6 +130,6 @@ export async function add_order_into_db(order)
         await db.collection("orders").insertOne(order)
     }
     catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
